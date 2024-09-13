@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>NEWS</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+ 
+     /*----------------------SECTION1 NABVBAR-------------------*/
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #333;
+    color: white;
+   position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.overall {
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 5px;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.title {
+    margin-left: 20px;
+    text-align: center;
+    color: slategray;
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.icons {
+    margin-left: 49%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 0 20px; 
+    color:slategray;
+    border-left: 2px solid slategray;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.icons i.fa-shopping-cart {
+    height: 70px;
+    width:40px;
+    border: none;
+    background-color:springgreen;
+    color: white;
+}
+
+.icons i.fa-times{
+    border:none;
+    padding-left: 0;
+}
+
+.icons i:hover {
+ color: #ddd;
+}
+/*-------------*/
+
+@media screen and (max-width: 991px) {
+    .header {
+         width: 991px;
+    }
+    .icons {
+         margin-left:10%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .header {
+         width: 768px;
+    }
+    .icons {
+         margin-left:11%;
+    }
+    .overall {
+        width: 300px;
+        justify-content:space-between;
+        display: flex;
+        align-items: center;
+    }
+    .title {
+         width: 180px;
+        height: 70px;
+        font-size: 15px;
+    }
+    .logo img {
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+    }
+}
+@media only screen  and (max-width: 667px) {
+    .header {
+        height: 60px;
+        max-width: 667px;
+   }
+   .logo img {
+    width: 100px;
+    height: 30px;
+}
+   .icons {
+    height: 60px;
+        margin-left:30%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    width: 170px;
+    height: 60px;
+    margin-left: 0 ;
+    
+}
+.overall {
+    width: 330px;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+}
+}     
+@media only screen  and (max-width: 425px) {
+    .header {
+        height: 60px;
+        max-width: 425px;
+   }
+   .logo img {
+    margin-top: 2px;
+    margin-left: 10px;
+        width: 120px;
+        height: 40px;
+}
+   .icons {
+    height: 60px;
+        margin-left:29%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none;
+}
+.overall {
+    width: 150px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+@media only screen  and (max-width: 375px) {
+    .header {
+         height: 60px;
+        max-width: 375px;
+   }
+   .logo img {
+         margin-top: 2px;
+        margin-left: 10px;
+        width: 120px;
+        height: 40px;
+}
+    .icons {
+        width:300px;
+       height: 60px;   
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none; 
+}
+.overall {
+    width: 120px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+  
+@media only screen  and (max-width: 320px) {
+    .header {
+        height: 60px;
+        max-width: 320px;
+   }
+   .logo img {
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 120px;
+     height: 40px;
+}
+   .icons {
+     width:270px;
+       height: 60px;
+       margin-left:12%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none; 
+}
+.overall {
+    width: 130px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+            /*-----------------SECTION2 NAVBAR ------------------*/
+    
+ #navbr { 
+    background-color: #ff4500; 
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-family: Arial, sans-serif; 
+     margin-top: 70px; 
+     }
+     .nav1{
+      width:700px;
+     justify-content: space-around;
+    display: flex;
+    overflow-y: auto;
+     }
+            
+     .nav1 p {
+        margin: 0;
+        color: white;
+            }
+     .nav2 .btn {
+         width:200px;
+        height:60px ;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+         }
+            /*--------------*/
+     @media only screen  and (max-width: 991px){
+        #navbr { 
+        flex-direction: column;
+        justify-content: space-between; 
+       
+        }
+        .nav1{
+        margin-top: 10px;
+        }
+        .nav2 .btn{
+        margin-top: 20px;
+          }
+            }
+     @media only screen  and (max-width: 667px),
+        only screen  and (max-width: 375px),
+        only screen  and (max-width: 425px){
+        .nav1{
+         display: none;
+         }
+
+      #navbr { 
+         align-items:center;
+        justify-content:baseline;
+        margin-top: 50px;
+           }
+         .nav2 .btn{
+          width:180px;
+         margin-top: 0;
+     }
+
+     }
+
+        /*-----------------SECTION2 NAVBAR ------------------*/
+
+        #navbar {
+            height: 75px;
+            background-color: #fff;
+            padding: 10px 50px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .log img {
+            height: 30px;
+            margin-right: 40px;
+        }
+        .nav {
+           /* width: 650px;
+            justify-content: space-between;*/
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px; 
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .nav a.active {
+            color: #ff4500;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #ff4500;
+            border-bottom: 4.5px solid #ff4500;
+            padding-bottom: 34px;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger-icon,
+        .close-icon {
+            font-size: 30px;
+            display: none;
+        }
+        
+        @media (max-width: 991px) {
+            #navbar {
+                height: 60px;
+            }
+            .nav {
+                 font-size: 17px;
+                  width: 250px;
+                  height: 100%;
+                 display: none;
+                 flex-direction: column;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                background-color: #fff;
+                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                 z-index: 9999;
+            }
+            .nav li {
+                margin-top: 10%;
+            }
+            .nav a.active,
+           .nav a:hover {
+            width:400px;
+            padding-bottom: 5px;
+        }
+             .nav.open {
+                display: flex;
+            }
+        
+            .menu-icon {
+                display: block;
+            }
+        
+            .hamburger-icon {
+                display: block;
+            }
+        
+            .close-icon {
+                display: none;
+            }
+        
+            .menu-icon.active .hamburger-icon {
+                display: none;
+            }
+        
+            .menu-icon.active .close-icon {
+                display: block;
+            }
+        }
+        @media only screen  and (max-width: 320px){
+            #navbar {
+               height: 60px;
+                padding: 10px 20px;
+                
+            }
+            
+        }
+                     /*--------------- SECTION 4----------------------*/
+
+             #sec4{
+                    background-color:#151515e6;
+                    color: #fff;
+                    padding: 50px 0;
+                    position: relative; 
+                }
+                 #sec4::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("hero.jpg.webp");
+                    background-size: cover;
+                    background-position: center;
+                    opacity: 3; 
+                   z-index: -1; 
+                }
+                #sec4 h1 {
+                    font-size: 2em;
+                    position: relative; 
+                    padding-left: 5px;
+                    padding-bottom: 30px; 
+                    margin-bottom: 50px; 
+                    margin-left:20%;
+                    font-family: Montserrat, sans-serif;
+                }
+                #sec4 h1::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 70px; 
+                    height: 3px;
+                    background-color: #ff4500;
+                }
+                @media only screen  and (max-width: 425px),
+                 only screen  and (max-width: 375px), 
+                 only screen  and (max-width: 320px){
+                    #sec4 h1 {
+                    padding-left:0;
+                     margin-left:20px;
+                    }
+                }
+
+                /*---------------------SECTIO 5----------*/
+               
+
+/*.slider {
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 80%;
+   /* margin: auto;*
+    overflow: hidden;
+    /*border: 1px solid #ddd;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+/*.card1 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card1 img {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text h6, .text img {
+    margin: 0;
+}
+
+.btns {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btns:hover {
+    background-color: #0056b3;
+}
+
+/*#cont form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#cont input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#cont button[type="submit"] {
+    padding: 10px;
+}
+
+.over {
+    overflow-y: auto;
+}
+
+.popular-posts {
+    margin-top: 20px;
+}
+
+.popular-posts .post {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.popular-posts img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.popular-posts .post-content {
+    flex: 1;
+}
+
+.eventheader {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.event img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.containers {
+    margin-top: 20px;
+}
+
+.cause-item {
+    margin-bottom: 20px;
+}
+
+.cause-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.progress-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #007BFF;
+}
+
+.raised-goals {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.indicator:hover {
+    background-color: #0056b3;
+}
+
+.indicator.active {
+    background-color: #0056b3;
+}
+        #sec5 {
+
+        display: flex;
+    padding: 50px 20%;
+}
+
+.txt {
+   
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    gap: 50px;
+  
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: #ddd;
+}*/
+
+              /* #sec5 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: relative;
+            width: 100%;
+           
+            display: flex;
+            padding: 50px 20%;
+        }
+        .tl {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .txt {
+            min-width: 100%;
+            height: 100%;
+            position: relative;
+            
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    gap: 50px;
+        }
+
+
+.txt-active {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: auto;
+    gap: 50px;
+}*/
+
+
+
+/*.card1 {
+    width: 650px;
+    margin: 0px; 
+}
+
+.text {
+    margin-top: 0;
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+}
+
+.text h6 {
+    margin-top: 60px;
+    font-size: 15px;
+    color: #e65c00;
+}
+
+.card1 h4 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.cts {
+    color: silver;
+    
+    margin-top: 8px;
+} 
+span{
+    color:#333;
+}
+
+.card1 img {
+    max-width: 100%;
+    height: 70%;
+}
+
+.card1 p {
+    width: 650px;
+    line-height: 150%;
+    font-size: 17px;
+    color: silver;
+    margin-bottom: 35px;
+}
+
+.donate-img {
+    width: 50px;
+    height: auto;
+    margin: 30px 0;
+}
+
+.btns {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 17px 35px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.content-div .btn:hover {
+    background-color: #ff4500;
+}
+.navigation {
+    display: flex;
+    margin-top: 50px;
+}
+
+.indicator {
+    font-size: 15px;
+    color:black;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.indicator.active {
+    color: #ff4500;
+}
+#cont{ 
+    
+     margin-left: 70px;
+}
+  #cont form {
+        margin-top: 30px;
+        display: flex;
+    }
+     #cont input[type="email"] {
+        padding: 15px 30px;
+        border: 1px dotted black;
+        border-radius: 1px;
+        flex: 1;
+    }
+     #cont button {
+        padding: 15px 25px;
+        background-color:#ff4500;
+       border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+    }
+     #cont button:hover {
+        background-color:#ff4500;
+    }
+
+   
+
+           #sec7 {
+             
+                font-family: Arial, sans-serif;
+                padding-left: 20px;
+                margin-top: 50px;
+           
+            }
+            
+            .container {
+              
+               margin-left: 20px;
+                display: flex;
+            }
+            
+           
+            .left, .right {
+                display: flex;
+                flex-direction: column;
+            }
+            .event {
+                margin-bottom: 30px;
+                display: flex;
+            }
+            .event img {
+                width: 100px;
+                height: 100px;
+               
+            }
+            .event-details {
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+            }
+            .event-details h4 {
+                font-size: 15px;
+                font-family: sans-serif;
+                color: #333;
+                margin-top: 0;
+                margin-bottom:5px;
+            }
+            .eventheader {
+                color: #333;
+                font-size: 20px;
+                position: relative;
+                padding-bottom: 30px;
+            }
+            
+            .event-details h6 {
+                font-size: 10px;
+                color: #666;
+                font-family: sans-serif;
+                margin: 0; 
+            }
+            
+            .event-details p {
+                font-size: 17px;
+                width:300px;
+                color: #666;
+                margin-bottom: 20px; 
+                line-height: 120%;
+            }
+            
+            .event-details a {
+               
+                color:#ff4500;
+                text-decoration: none;
+            }
+            
+            .event-details a:hover {
+                text-decoration: underline;
+            }
+            .over{
+         
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-top: 50px;
+           
+        }
+        .popular-posts {
+            width: 400px;
+        }
+        .post {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 0;
+           
+          
+        }
+        .post img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .post-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .post-content h3 {
+            margin: 0;
+            color: #333;
+        }
+        .post-content p {
+            margin: 5px 0 0;
+            color:#ff4500;
+        }
+
+       
+        #sec8{
+            
+              font-family: Arial, sans-serif;
+              padding: 0;
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+         
+          }
+         
+                .cause-item {
+                    box-sizing: border-box;
+                    padding: 0;
+                    background: white;
+                   width: 450PX;
+                   height: 600px;
+                   border: 1px solid silver;
+                    align-items:center;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                    margin: 0 10px;
+                   
+                }
+                
+                .cause-item img {
+                    width: 100%;
+                    height: 45%;
+                    border-radius: 8px 8px 0 0;
+                }
+                
+                .cause-item h3 {
+                  
+                    font-size: 1.5em;
+                    margin: 20px 20px;
+                }
+                
+                .cause-item p {
+                    text-align:justify;
+                    width:320px;
+                    line-height: 150%;
+                    font-size:17px;
+                    color: #666;
+                    margin: 20px 20px;
+                }
+                .raised-goals{
+                   display: flex;
+                   margin: 20px 20px;
+                }
+                
+               
+.progress-bar-container {
+    position: relative;
+    margin: 30px 20px;
+}
+
+
+
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress {
+    background: #ff4500;
+    height: 5px;
+    border-radius: 5px;
+    width: 83%; 
+}
+                
+                .progress-circle {
+                    position: absolute;
+                    top: -20px;
+                    left: 83%; 
+                    transform: translateX(-50%);
+                    background: #ff4500;
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                
+                @media only screen  and (max-width: 991px){
+                 #sec5 {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px 20%;
+}
+                   #cont{ 
+                       
+                        margin-top: 40px;
+                         margin-left: 0;
+}
+             .over{
+               justify-content:flex-start;
+        }
+            .container {
+              
+              margin-left: 0;
+               display: flex;
+           }
+           #sec8{
+                padding: 0;
+          }
+          .cause-item{
+            margin: 0 ;
+          }
+              }
+
+              @media only screen  and (max-width: 768px){
+                #sec5 {
+                  padding: 50px 30px;
+}
+              .cause-item {
+                  width: 650PX;
+                    margin: 0 ;
+                   
+                }
+                
+                .cause-item img {
+                    width: 100%;
+                    height: 45%;
+                    border-radius: 8px 8px 0 0;
+                }
+                
+                .cause-item h3 {
+                  
+                    font-size: 1.5em;
+                    margin: 20px 20px;
+                }
+                
+                .cause-item p {
+                    width:600px;
+                }
+                .event-details p {
+              width:500px;
+            }
+            }
+            
+            @media only screen  and (max-width: 667px){
+                #sec5 {
+                  padding: 50px 37px;
+}
+.cause-item {
+                  width: 500PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width:450px;
+                }
+                .txt {
+  
+    width: 550px;
+   
+}
+.card1 {
+    width: 550px;
+    margin: 0px; 
+}
+.card1 p {
+    width: 550px;
+   
+}
+#sec8{
+             
+              font-family: Arial, sans-serif;
+              width:550px;
+              padding: 0;
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+         
+          }
+            }
+           
+            @media only screen  and (max-width: 425px){
+                #sec5 {
+           
+                    padding: 50px 20px;
+}
+              .cause-item {
+                  width: 400PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width: 300px;
+                }
+                .txt {
+                width: 400px;
+}
+                .card1 {
+            width: 370px;
+             margin: 0px; 
+}
+             .card1 p {
+               width: 350px;
+   
+}
+                      #sec8{
+                       width:300px;
+            }
+            .event-details p {
+                width:250px;
+               
+            }
+            #cont{ 
+                width:400px;
+            }
+        }
+
+       @media only screen  and (max-width: 375px){
+                #sec5 {
+           
+                    padding: 50px 10px;
+}
+              .cause-item {
+                  width: 350PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width: 260px;
+                }
+                .txt {
+                width: 350px;
+}
+                .card1 {
+            width: 350px;
+             margin: 0px; 
+}
+             .card1 p {
+               width: 370px;
+   
+}
+                      #sec8{
+                       width:300px;
+            }
+            .event-details p {
+                width:200px;
+               
+            }
+            #cont{ 
+                width:350px;
+            }
+        }
+        @media only screen  and (max-width:320px){
+            .card1 {
+                width: 280px;
+            }
+            .card1 p {
+               width: 280px;
+}
+#cont{ 
+                width:280px;
+            }
+            .cause-item {
+                  width: 280PX;
+                    margin: 0 ;
+                    height: 700px;
+                   
+                }
+                .cause-item p {
+                    width: 200px;
+                }
+                .txt {
+                width: 280px;
+}
+#cont input[type="email"] {
+        padding: 15px 20px;
+       
+    }
+    .event-details h4{
+                font-size: 10px;
+            }
+            #sec8{
+                       width:280px;
+            }
+            #cont button {
+        padding: 15px 20px;
+       
+    }
+    .event-details p {
+                width:180px;
+               
+            }
+
+        }*/
+     .slider {
+    font-family: Arial, sans-serif;
+    position: relative;
+    width: 80%;
+    margin: 30px 15%;
+    overflow: hidden;
+   
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.left, .right {
+   
+    width: 50%;
+    padding: 20px;
+}
+.card1 {
+   
+    width: 600px;
+    margin: 0px; 
+}
+
+.text {
+    margin-top: 0;
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+}
+
+.text h6 {
+    margin-top: 60px;
+    font-size: 15px;
+    color: #e65c00;
+}
+
+.card1 h4 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.cts {
+    color: silver;
+    
+    margin-top: 8px;
+} 
+span{
+    color:#333;
+}
+
+.card1 img {
+    max-width:100%;
+    height: 50%;
+}
+
+.card1 p {
+    width: 600px;
+    line-height: 150%;
+    font-size: 15px;
+    color:silver;
+    margin-bottom: 35px;
+}
+
+.donate-img {
+    width: 50px;
+    height: auto;
+    margin: 30px 0;
+}
+
+.btns {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 17px 35px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10%;
+}
+
+.content-div .btn:hover {
+    background-color: #ff4500;
+}
+.navigation {
+    width:300px;
+   margin-left: 10px;
+    display: flex;
+    margin-bottom:60px;
+}
+
+.indicator {
+    font-size: 18px;
+    color:black;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.indicator.active {
+    color: #ff4500;
+}
+#cont{ 
+    width:400px;
+  
+     margin-left: 0;
+}
+  #cont form {
+        margin-top: 30px;
+        display: flex;
+    }
+     #cont input[type="email"] {
+        padding: 15px 30px;
+        border: 1px dotted black;
+        border-radius: 1px;
+        flex: 1;
+    }
+     #cont button {
+        padding: 15px 25px;
+        background-color:#ff4500;
+       border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+    }
+     #cont button:hover {
+        background-color:#ff4500;
+    }
+
+   
+
+           #sec7 {
+           
+                font-family: Arial, sans-serif;
+                padding-left: 20px;
+                margin-top: 50px;
+           
+            }
+            
+            .container {
+              
+               margin-left: 0;
+                display: flex;
+            }
+            
+           
+          /*  .left, .right {
+                background-color: blue;
+                display: flex;
+                flex-direction: column;
+            }*/
+            .event {
+                margin-bottom: 30px;
+                display: flex;
+            }
+            .event img {
+                width: 100px;
+                height: 100px;
+               
+            }
+            .event-details {
+                display: flex;
+                flex-direction: column;
+                margin-left: 30px;
+            }
+            .event-details h4 {
+                font-size: 15px;
+                font-family: sans-serif;
+                color: #333;
+                margin-top: 0;
+                margin-bottom:5px;
+            }
+            .eventheader {
+                color: #333;
+                font-size: 20px;
+                position: relative;
+                padding-bottom: 30px;
+            }
+            
+            .event-details h6 {
+                font-size: 10px;
+                color: #666;
+                font-family: sans-serif;
+                margin: 0; 
+            }
+            
+            .event-details p {
+                font-size: 17px;
+                width:300px;
+                color: #666;
+                margin-bottom: 20px; 
+                line-height: 120%;
+            }
+            
+            .event-details a {
+               
+                color:#ff4500;
+                text-decoration: none;
+            }
+            
+            .event-details a:hover {
+                text-decoration: underline;
+            }
+            .over{
+        
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-top: 50px;
+           
+        }
+        .popular-posts {
+            width: 400px;
+        }
+        .post {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 0;
+           
+          
+        }
+        .post img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .post-content {
+            display: flex;
+            flex-direction: column;
+        }
+        .post-content h3 {
+            margin: 0;
+            color: #333;
+        }
+        .post-content p {
+            margin: 5px 0 0;
+            color:#ff4500;
+        }
+
+       
+        #sec8{
+              
+              font-family: Arial, sans-serif;
+              padding: 0;
+              margin-left: 0;
+              display: flex;
+              flex-direction: column;
+         
+          }
+         
+                .cause-item {
+                    box-sizing: border-box;
+                    padding: 0;
+                    background: white;
+                   width: 450PX;
+                   height: 600px;
+                   border: 1px solid silver;
+                    align-items:center;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                    margin:20px 20px;
+                   
+                }
+                
+                .cause-item img {
+                    width: 100%;
+                    height: 45%;
+                    border-radius: 8px 8px 0 0;
+                }
+                
+                .cause-item h3 {
+                  
+                    font-size: 1.5em;
+                    margin-left: 20%;
+                }
+                
+                .cause-item p {
+                    text-align:justify;
+                    width:320px;
+                    line-height: 150%;
+                    font-size:17px;
+                    color: #666;
+                    margin: 20px 20px;
+                }
+                .raised-goals{
+                   display: flex;
+                   margin: 20px 20px;
+                }
+                
+               
+.progress-bar-container {
+    position: relative;
+    margin: 30px 20px;
+}
+
+
+
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress {
+    background: #ff4500;
+    height: 5px;
+    border-radius: 5px;
+    width: 83%; 
+}
+                
+                .progress-circle {
+                    position: absolute;
+                    top: -20px;
+                    left: 83%; 
+                    transform: translateX(-50%);
+                    background: #ff4500;
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                @media only screen  and (max-width: 991px){
+                    .slider {
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 10% ;
+   
+}
+.slide {
+   
+    flex-direction: column;
+  }
+    #cont{ 
+     margin-top: 40px;
+      margin-left: 0;
+}
+             .over{
+               justify-content:flex-start;
+        }
+            .container {
+              
+              margin-left: 0;
+               display: flex;
+           }
+           #sec8{
+                padding: 0;
+          }
+          #cont{
+            width:650px;
+          }
+         .cause-item{
+            width: 600PX;
+            height: 650px;
+            margin: 0 ;
+          }
+              }
+
+       @media only screen  and (max-width: 768px){
+                .slider {
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 30px ;
+   
+}
+
+.slide {
+    flex-direction: column;
+  }
+    .cause-item {
+     width: 600PX;
+     margin: 0 ;   
+     }
+                .cause-item img {
+                    width: 100%;
+                    height: 45%;
+                    border-radius: 8px 8px 0 0;
+                }
+                
+                .cause-item h3 {
+                  
+                    font-size: 1.5em;
+                    margin: 20px 20px;
+                }
+                
+                .cause-item p {
+                    width:600px;
+                }
+                .event-details p {
+              width:500px;
+            }
+            }
+            
+            @media only screen  and (max-width: 667px){
+                .slider {
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 20px ;
+   
+}
+.event-details p {
+    font-size: 15px;;
+                width:250px;
+ }
+
+
+.slide {
+    padding: 0;
+    flex-direction: column;
+  }
+ .left{
+    width:60%;
+ }
+.cause-item {
+                  width: 500PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width:450px;
+                }
+                .txt {
+  
+    width: 550px;
+   
+}
+#cont{
+            width:500px;
+          }
+.card1 {
+    width: 550px;
+    margin: 0px; 
+}
+.card1 p {
+    width: 550px;
+   
+}
+#sec8{
+             
+              font-family: Arial, sans-serif;
+              width:550px;
+              padding: 0;
+              margin-top: 40px;
+              display: flex;
+              flex-direction: column;
+         
+          }
+        }
+           
+            @media only screen  and (max-width: 425px){
+               .slider {
+                   width:400px;
+                   background-color: red;
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 10px ;
+   
+}
+.slides{
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+.event-details p {
+    font-size: 15px;;
+    width:250px;
+ }
+ #cont{
+            width:250px;
+          }
+
+              .cause-item {
+                  width: 400PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width: 300px;
+                }
+                .txt {
+                width: 400px;
+}
+                .card1 {
+            width: 370px;
+             margin: 0px; 
+}
+             .card1 p {
+               width: 350px;
+   
+}
+                      #sec8{
+                       width:300px;
+            }
+            .event-details p {
+                width:250px;
+               
+            }
+            #cont{ 
+                width:400px;
+            }
+        }
+
+       @media only screen  and (max-width: 375px){
+        .slider {
+                   width:360px;
+                   background-color: red;
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 5px ;
+   
+}
+.slides{
+    margin: 0;
+    padding: 0;
+    
+}
+.card1{
+    margin-left: 0;
+     width:550px;
+     background-color: aqua;
+}
+
+.slide{
+   
+    margin: 0;
+    padding: 0;
+   background-color: blue;
+}
+.event-details p {
+    font-size: 15px;;
+    width:250px;
+ }
+ #cont{
+            width:250px;
+          }
+              .cause-item {
+                  width: 300PX;
+                    margin: 0 ;
+                   
+                }
+                .cause-item p {
+                    width: 200px;
+                }
+                .txt {
+                width: 350px;
+}
+                .card1 {
+            width: 350px;
+             margin: 0px; 
+}
+             .card1 p {
+               width: 300px;
+   
+}
+                      #sec8{
+                       width:300px;
+            }
+            .event-details p {
+                width:200px;
+               
+            }
+           
+            .donate-img {
+    width: 30px;
+    height: auto;
+    margin: 30px 10px;
+}
+            
+        }
+        @media only screen  and (max-width:320px){
+            .slider {
+                   width:300px;
+                   background-color: red;
+                    flex-direction: column;
+                    padding: 50px 0;
+                    margin:50px 5px ;
+   
+}
+.slides{
+    margin: 0;
+    padding: 0;
+    
+}
+            .card1 {
+                width: 280px;
+            }
+            .card1 p {
+               width: 280px;
+}
+             #cont{ 
+                width:280px;
+            }
+            .cause-item {
+                  width: 280PX;
+                    margin: 0 ;
+                    height: 700px;
+                   
+                }
+                .cause-item p {
+                    width: 200px;
+                }
+                .txt {
+                width: 280px;
+}
+#cont input[type="email"] {
+        padding: 15px 20px;
+       
+    }
+    .event-details h4{
+                font-size: 10px;
+            }
+            #sec8{
+                       width:280px;
+            }
+            #cont button {
+        padding: 15px 20px;
+       
+    }
+    .event-details p {
+        font-size: 10px;
+                width:150px;
+               
+            }
+
+        }
+     
+     
+ /*---------------------SECTION NO 6-------------------------*/   
+    
+ #sect11 {
+        background-color:#151515e6;
+        position: relative;
+        color: #fff;
+        padding: 80px 50px;
+        background-image: url('f.jpg.webp'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden; 
+    }
+    
+    #sect11::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background-color:#151515e6;
+        z-index: 1;
+    }
+    #sect11 img{
+        margin-bottom: 20px;
+    }
+    #sect11 .footer-container {
+        position: relative;
+        z-index: 2; 
+    }
+     .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        flex-wrap: wrap; 
+    }
+    .footer-section {
+        flex: 1;
+        margin: 20px;
+        min-width: 250px; 
+    }
+    .footer-section h2, .footer-section h3 {
+        color:white;
+        margin-top:0;
+    }
+    .footer-section p, .footer-section ul, .footer-section li {
+        padding: 0;
+        color:#999;
+        list-style: none;
+        gap:30px;
+    }
+    .footer-section ul.tal li {
+        font-size: 15px;
+        color: #999;
+        margin-bottom: 45px; 
+    }
+    .footer-section p{
+        line-height: 150%;
+        margin-bottom: 60%;
+    }
+    .footer-section ul {
+        padding-left: 0;
+       
+    }
+    .footer-section h3 {
+        margin-bottom: 35px; 
+        font-size: 20px;
+    }
+    .footer-section ul li {
+        margin-bottom: 15px;
+       
+    }
+    
+    .footer-section ul li:last-child {
+        margin-bottom: 0;
+    }
+    .footer-section ul li a {
+        color:  #999;
+        text-decoration: none; 
+    }
+    .footer-section ul.tal li a span {
+        margin-top: 10px;
+        display: block;
+        font-size: 12px;
+        color:#ff4500;
+    }
+    .footer-section p {
+        margin-bottom: 10px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 30px;
+        margin-top:40px ;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .footer-section form {
+        margin-top: 30px;
+        display: flex;
+    }
+     .footer-section input[type="email"] {
+        padding: 15px;
+        border: none;
+        border-radius: 1px;
+        flex: 1;
+    }
+     .footer-section button {
+        padding: 10px 20px;
+        background-color:#ff4500;
+        border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+    }
+     .footer-section button:hover {
+        background-color:#ff4500;}
+
+        .footer-bottom {
+            background-color:#333;
+            height: 50px;
+            text-align: center;
+            padding: 20px 0; 
+            color:#999;
+        }
+        
+        .footer-bottom span {
+            color: red;
+        }
+       
+        /*-----------------------*/
+
+        @media (max-width: 991px) {
+            #sect11{
+                padding: 40px 40px;
+            }
+                .footer-section {
+                    height: 300px;
+                    flex: 1 1 45%; 
+                    margin:0; 
+                    min-width: 30%;
+                }
+                .footer-container {
+                    height: 80vh;
+                    padding: 0;
+                    margin: 0;
+                    flex-wrap: wrap;
+                }
+        }
+        @media (max-width: 768px) {
+            #sect11{
+
+                padding: 30px 20px;
+            }
+            .footer-container {
+                  flex-wrap: wrap;
+                }
+                .footer-section {
+                    flex: 1 1 45%; 
+                    margin: 10px; 
+                    min-width: 45%;
+                }
+                .footer-container {
+                    height: 100vh;
+                }
+        }
+        @media (max-width:667px) {
+            #sect11{
+                padding: 30px 20px;
+            }
+            .footer-container {
+                height: auto;
+                flex-direction:row;
+                align-items:flex-start;
+            }
+            .footer-section {
+              margin-left: 0;
+                margin-bottom: 20px;  
+            }
+        }
+        @media (max-width: 425px) {
+            #sect11{
+                padding: 30px 20px;
+            }
+            .footer-container {
+                padding: 0;
+                margin-left: 0;
+                height: auto;
+                flex-direction:row;
+                align-items:flex-start;
+            }
+            .footer-section {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+                min-width: 300px;
+            }
+            .footer-bottom p{
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 375px) {
+            #sect11{
+                padding: 20px 50px;
+            }
+          .footer-section {
+              min-width: 200px;
+              margin-bottom: 20px;
+             }
+        }
+        @media (max-width: 320px) {
+            #sect11{
+                
+                padding: 20px 10px;
+            }
+          .footer-section {
+              min-width: 200px;
+              margin-bottom: 20px;
+             }
+             
+        }
+     
+
+     </style>
+     <body>
+
+                    <!------------------------SECTIOB1 NAVBAR----------------->
+  
+    <div class="header" id="header">
+        <div class="overall">
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <div class="title">
+            + THECHARITY
+        </div>
+    </div>
+        <div class="icons">
+            <i class="fas fa-laptop"></i>
+            <i class="fas fa-tablet-alt"></i>
+            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-times" onclick="closeHeader()"></i>
+        </div>
+    </div>
+    
+                  <!-------------------SECTION NO2 NAVBAR-------------->
+    
+                  <section id="navbr">
+                    <div class="nav1">
+                        <P>MAIL: contact@ourcharity.com</P>
+                        <p>PHONE: +24 3772 120 091 / +56452 4567</p>
+                  </div>
+                  <div class="nav2">
+                    <button class="btn">Donate Now</button>
+                  </div>
+                  </section>
+    
+                  <!-------------------SECTION NO3 NAVBAR-------------->
+    
+                  <section id="navbar">
+                    <div class="log">
+                        <img src="logo.png.webp" alt="Logo">
+                    </div>
+                    <ul class="nav">
+                        <li><a href="ass.html" class="active">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="cause.html">Causes</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="NEWS.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <div class="hamburger-icon">☰</div>
+                        <div class="close-icon">✖</div>
+                    </div>
+                </section>
+    
+                        <!-------------------SECTION NO4 NAVBAR-------------->
+    
+                    <section id="sec4">
+                        <h1>NEWS</h1>
+                     </section>
+
+                        <!------------------------SECTIOB5 NAVBAR----------------->
+                        
+                        <section id="sec5">
+                            <div class="slider">
+                                <div class="slides">
+                                    <!-- Slide 1 -->
+                                    <div class="slide" id="slide1">
+                                        <div class="left">
+                                            <!-- Card 1 -->
+                                            <div class="card1">
+                                                <img src="1.jpg.webp" alt="image1">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <!-- Card 2 -->
+                                            <div class="card1">
+                                                <img src="2.jpg.webp" alt="image2">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <!-- Card 3 -->
+                                            <div class="card1">
+                                                <img src="3.jpg.webp" alt="image3">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div id="cont">
+                                                <form>
+                                                    <input type="email" placeholder="Search">
+                                                    <button type="submit">GO</button>
+                                                </form>
+                                                <div class="over">
+                                                    <div class="popular-posts">
+                                                        <h2>Popular Posts</h2>
+                                                        <div class="post">
+                                                            <img src="p-1.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>A new cause to help</h3>
+                                                                <p>March 12, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-2.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>We love to help people</h3>
+                                                                <p>March 10, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-3.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>The new ideas for helping</h3>
+                                                                <p>March 09, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <section id="sec8">
+                                                <div class="container">
+                                                    <div class="column left">
+                                                        <h2 class="eventheader">Upcoming Events</h2>
+                                                        <div class="event">
+                                                            <img src="event-1.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-2.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-3.jpg.webp" alt="Bring water to the children">
+                                                            <div class="event-details">
+                                                                <h4>Bring water to the children</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="sec8">
+                                                <div class="containers">
+                                                    <h2 class="eventheader">Featured Causes</h2>
+                                                    <div class="cause-item">
+                                                        <img src="cause-2.jpg.webp" alt="Cause 2">
+                                                        <h3>Education for all</h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                                        <div class="progress-bar-container">
+                                                            <div class="progress-circle">83%</div>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 83%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="raised-goals">
+                                                            <p>Raised: $56,880</p>
+                                                            <p>Goal: $70,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Slide 2 -->
+                                    <div class="slide" id="slide2">
+                                        <div class="left">
+                                            <!-- Repeat same cards as slide 1 with different content if needed -->
+                                            <div class="card1">
+                                                <img src="1.jpg.webp" alt="image1">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <div class="card1">
+                                                <img src="2.jpg.webp" alt="image2">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <div class="card1">
+                                                <img src="3.jpg.webp" alt="image3">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div id="cont">
+                                                <form>
+                                                    <input type="email" placeholder="Search">
+                                                    <button type="submit">GO</button>
+                                                </form>
+                                                <div class="over">
+                                                    <div class="popular-posts">
+                                                        <h2>Popular Posts</h2>
+                                                        <div class="post">
+                                                            <img src="p-1.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>A new cause to help</h3>
+                                                                <p>March 12, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-2.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>We love to help people</h3>
+                                                                <p>March 10, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-3.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>The new ideas for helping</h3>
+                                                                <p>March 09, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <section id="sec8">
+                                                <div class="container">
+                                                    <div class="column left">
+                                                        <h2 class="eventheader">Upcoming Events</h2>
+                                                        <div class="event">
+                                                            <img src="event-1.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-2.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-3.jpg.webp" alt="Bring water to the children">
+                                                            <div class="event-details">
+                                                                <h4>Bring water to the children</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="sec8">
+                                                <div class="containers">
+                                                    <h2 class="eventheader">Featured Causes</h2>
+                                                    <div class="cause-item">
+                                                        <img src="cause-2.jpg.webp" alt="Cause 2">
+                                                        <h3>Education for all</h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                                        <div class="progress-bar-container">
+                                                            <div class="progress-circle">83%</div>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 83%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="raised-goals">
+                                                            <p>Raised: $56,880</p>
+                                                            <p>Goal: $70,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                    
+                                    <!-- Slide 3 -->
+                                    <div class="slide" id="slide3">
+                                        <div class="left">
+                                            <!-- Repeat same cards as slide 1 with different content if needed -->
+                                            <div class="card1">
+                                                <img src="1.jpg.webp" alt="image1">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                </p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <div class="card1">
+                                                <img src="2.jpg.webp" alt="image2">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                    .</p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                            <div class="card1">
+                                                <img src="3.jpg.webp" alt="image3">
+                                                <div class="text">
+                                                    <h6>March 12, 2018</h6>
+                                                    <img src="donate-icon.png (1).webp" alt="Donate Image" class="donate-img">
+                                                </div>
+                                                <h4>Toys for Children Campaign</h4>
+                                                <p class="ct">in Causes <span>| </span> by Tom Phillips <span>| </span> 3 Comments</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Integer accumsan sodales odio, id tempus velit ullamc.
+
+                                                    lamcorper.</p>
+                                                <button class="btns">Read More</button>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div id="cont">
+                                                <form>
+                                                    <input type="email" placeholder="Search">
+                                                    <button type="submit">GO</button>
+                                                </form>
+                                                <div class="over">
+                                                    <div class="popular-posts">
+                                                        <h2>Popular Posts</h2>
+                                                        <div class="post">
+                                                            <img src="p-1.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>A new cause to help</h3>
+                                                                <p>March 12, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-2.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>We love to help people</h3>
+                                                                <p>March 10, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post">
+                                                            <img src="p-3.jpg.webp" alt="Post Image">
+                                                            <div class="post-content">
+                                                                <h3>The new ideas for helping</h3>
+                                                                <p>March 09, 2018</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <section id="sec8">
+                                                <div class="container">
+                                                    <div class="column left">
+                                                        <h2 class="eventheader">Upcoming Events</h2>
+                                                        <div class="event">
+                                                            <img src="event-1.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-2.jpg.webp" alt="Fundraiser for Kids">
+                                                            <div class="event-details">
+                                                                <h4>Fundraiser for Kids</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event">
+                                                            <img src="event-3.jpg.webp" alt="Bring water to the children">
+                                                            <div class="event-details">
+                                                                <h4>Bring water to the children</h4>
+                                                                <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <section id="sec8">
+                                                <div class="containers">
+                                                    <h2 class="eventheader">Featured Causes</h2>
+                                                    <div class="cause-item">
+                                                        <img src="cause-2.jpg.webp" alt="Cause 2">
+                                                        <h3>Education for all</h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                                        <div class="progress-bar-container">
+                                                            <div class="progress-circle">83%</div>
+                                                            <div class="progress-bar">
+                                                                <div class="progress" style="width: 83%;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="raised-goals">
+                                                            <p>Raised: $56,880</p>
+                                                            <p>Goal: $70,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Navigation controls -->
+                                <div class="navigation">
+                                    <button class="indicator active" data-slide="1">01</button>
+                                    <button class="indicator" data-slide="2">02</button>
+                                    <button class="indicator" data-slide="3">03</button>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+
+
+    
+       
+   
+
+                      <!-------------------SECTION NO6 ------------------->
+
+                      <section id="sect11">
+                        <div class="footer-container">
+                            <div class="footer-section">
+                                <img src="logo.png.webp">
+                                <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p>
+                              
+                                <div class="social-icons">
+                                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Useful Links</h3>
+                                <ul>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Become a Volunteer</a></li>
+                                    <li><a href="#">Donate</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Causes</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">News</a></li>
+                                </ul>
+                            </div>
+                        
+                            <div class="footer-section">
+                                <h3>Latest News</h3>
+                                <ul class="tal">
+                                    <li><a href="#">A new cause to help <span>March 12, 2018</span></a></li>
+                                    <li><a href="#">We love to help people <span>March 12, 2018</span></a></li>
+                                    <li><a href="#">The new ideas for helping <span>March 12, 2018</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>Contact</h3>
+                                <p><i class="fas fa-phone"></i> +45 677 8993000 223</p>
+                                <p><i class="fas fa-envelope"></i> office@template.com</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Main Str. no 45-46, b3, 56832, Los Angeles, CA</p>
+                                <form>
+                                    <input type="email" placeholder="Your email">
+                                    <button type="submit">SEND</button>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="footer-bottom">
+                        <p>Copyright ©2024 All rights reserved | This template is made with <span>❤</span> by Colorlib</p>
+                    </div>
+                                        
+                                                
+
+
+ <!-- Slider End -->
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+                                                       
+               <script>
+              /* document.addEventListener("DOMContentLoaded", function() {
+  const indicators = document.querySelectorAll(".indicator");
+  const slides = document.querySelectorAll(".txt");
+
+  indicators.forEach(indicator => {
+    indicator.addEventListener("click", function() {
+      // Remove active class from all indicators
+      indicators.forEach(btn => btn.classList.remove("active"));
+      // Hide all slides
+      slides.forEach(slide => slide.style.display = "none");
+
+      // Add active class to the clicked indicator
+      this.classList.add("active");
+      // Display the corresponding slide
+      const slideNumber = this.getAttribute("data-slide");
+      document.querySelector(`.txt[data-slide="${slideNumber}"]`).style.display = "block";
+    });
+  });
+});
+*/
+/*let currentSlide = 1;
+
+function showSlide(n) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    if (n > totalSlides) {
+        currentSlide = 1;
+    } else if (n < 1) {
+        currentSlide = totalSlides;
+    } else {
+        currentSlide = n;
+    }
+
+    const offset = (currentSlide - 1) * -100;
+    slides.style.transform = `translateX(${offset}%)`;
+}*/
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+const indicators = document.querySelectorAll('.indicator');
+
+// Function to update slide based on currentSlide value
+function updateSlide() {
+    const slideWidth = slides[0].clientWidth;
+    document.querySelector('.slides').style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+    // Update active indicator
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    indicators[currentSlide].classList.add('active');
+}
+
+// Event listener for each indicator
+indicators.forEach(indicator => {
+    indicator.addEventListener('click', (e) => {
+        currentSlide = parseInt(e.target.getAttribute('data-slide')) - 1;
+        updateSlide();
+    });
+});
+                       /*---------------NAV*------------*/
+
+                     function closeHeader() {
+                       document.querySelector('.header').style.display = 'none';
+                        }
+                   
+                        function toggleMenu() {
+                       const nav = document.querySelector('.nav');
+                       const menuIcon = document.querySelector('.menu-icon');
+                       nav.classList.toggle('open');
+                       menuIcon.classList.toggle('active');
+                   }
+
+                </script>
+                 </body>
+                </html>

@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+    <title>Colorlib Header</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+ 
+     /*----------------------SECTION1 NABVBAR-------------------*/
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #333;
+    color: white;
+   position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+.overall {
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-top: 5px;
+    width: 150px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.title {
+    margin-left: 20px;
+    text-align: center;
+    color: slategray;
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.icons {
+    margin-left: 49%;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 0 20px; 
+    color:slategray;
+    border-left: 2px solid slategray;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.icons i.fa-shopping-cart {
+    height: 70px;
+    width:40px;
+    border: none;
+    background-color:springgreen;
+    color: white;
+}
+
+.icons i.fa-times{
+    border:none;
+    padding-left: 0;
+}
+
+.icons i:hover {
+ color: #ddd;
+}
+/*-------------*/
+
+@media screen and (max-width: 991px) {
+    .header {
+         width: 991px;
+    }
+    .icons {
+         margin-left:10%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .header {
+         width: 768px;
+    }
+    .icons {
+         margin-left:11%;
+    }
+    .overall {
+        width: 300px;
+        justify-content:space-between;
+        display: flex;
+        align-items: center;
+    }
+    .title {
+         width: 180px;
+        height: 70px;
+        font-size: 15px;
+    }
+    .logo img {
+        width: 100px;
+        height: 40px;
+        margin-left: 10px;
+    }
+}
+@media only screen  and (max-width: 667px) {
+    .header {
+        height: 60px;
+        max-width: 667px;
+   }
+   .logo img {
+    width: 100px;
+    height: 30px;
+}
+   .icons {
+    height: 60px;
+        margin-left:30%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    width: 170px;
+    height: 60px;
+    margin-left: 0 ;
+    
+}
+.overall {
+    width: 330px;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+}
+}     
+@media only screen  and (max-width: 425px) {
+    .header {
+        height: 60px;
+        max-width: 425px;
+   }
+   .logo img {
+    margin-top: 2px;
+    margin-left: 10px;
+        width: 120px;
+        height: 40px;
+}
+   .icons {
+    height: 60px;
+        margin-left:29%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none;
+}
+.overall {
+    width: 150px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+@media only screen  and (max-width: 375px) {
+    .header {
+         height: 60px;
+        max-width: 375px;
+   }
+   .logo img {
+         margin-top: 2px;
+        margin-left: 10px;
+        width: 120px;
+        height: 40px;
+}
+    .icons {
+        width:300px;
+       height: 60px;   
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none; 
+}
+.overall {
+    width: 120px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+  
+@media only screen  and (max-width: 320px) {
+    .header {
+        height: 60px;
+        max-width: 320px;
+   }
+   .logo img {
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 120px;
+     height: 40px;
+}
+   .icons {
+     width:270px;
+       height: 60px;
+       margin-left:12%;
+   }
+   .icons i.fa-shopping-cart {
+    height: 60px;
+}
+   .icons i.fa-laptop,
+    .icons i.fa-tablet-alt,
+    .icons i.fa-mobile-alt {
+    display: none;
+}
+.title {
+    display: none; 
+}
+.overall {
+    width: 130px;
+    justify-content:center;
+    display: flex;
+    align-items: center;
+}
+}
+            /*-----------------SECTION2 NAVBAR ------------------*/
+    
+ #navbr { 
+    background-color: #ff4500; 
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-family: Arial, sans-serif; 
+     margin-top: 70px; 
+     }
+     .nav1{
+      width:700px;
+     justify-content: space-around;
+    display: flex;
+    overflow-y: auto;
+     }
+            
+     .nav1 p {
+        margin: 0;
+        color: white;
+            }
+     .nav2 .btn {
+         width:200px;
+        height:60px ;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+         }
+            /*--------------*/
+     @media only screen  and (max-width: 991px){
+        #navbr { 
+        flex-direction: column;
+        justify-content: space-between; 
+       
+        }
+        .nav1{
+        margin-top: 10px;
+        }
+        .nav2 .btn{
+        margin-top: 20px;
+          }
+            }
+     @media only screen  and (max-width: 667px),
+        only screen  and (max-width: 375px),
+        only screen  and (max-width: 425px){
+        .nav1{
+         display: none;
+         }
+
+      #navbr { 
+         align-items:center;
+        justify-content:baseline;
+        margin-top: 50px;
+           }
+         .nav2 .btn{
+          width:180px;
+         margin-top: 0;
+     }
+     }
+
+        /*-----------------SECTION2 NAVBAR ------------------*/
+
+        #navbar {
+            height: 75px;
+            background-color: #fff;
+            padding: 10px 50px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .log img {
+            height: 30px;
+            margin-right: 40px;
+        }
+        .nav {
+           /* width: 650px;
+            justify-content: space-between;*/
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 20px; 
+        }
+        .nav li {
+            margin-left: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .nav a.active {
+            color: #ff4500;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #ff4500;
+            border-bottom: 4.5px solid #ff4500;
+            padding-bottom: 34px;
+        }
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+        .hamburger-icon,
+        .close-icon {
+            font-size: 30px;
+            display: none;
+        }
+        
+        @media (max-width: 991px) {
+            #navbar {
+                height: 60px;
+            }
+            .nav {
+                 font-size: 17px;
+                  width: 250px;
+                  height: 100%;
+                 display: none;
+                 flex-direction: column;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                background-color: #fff;
+                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                 z-index: 9999;
+            }
+            .nav li {
+                margin-top: 10%;
+            }
+            .nav a.active,
+           .nav a:hover {
+            width:400px;
+            padding-bottom: 5px;
+        }
+             .nav.open {
+                display: flex;
+            }
+        
+            .menu-icon {
+                display: block;
+            }
+        
+            .hamburger-icon {
+                display: block;
+            }
+        
+            .close-icon {
+                display: none;
+            }
+        
+            .menu-icon.active .hamburger-icon {
+                display: none;
+            }
+        
+            .menu-icon.active .close-icon {
+                display: block;
+            }
+        }
+        @media only screen  and (max-width: 320px){
+            #navbar {
+               height: 60px;
+                padding: 10px 20px;
+                
+            }
+            
+        }
+                     /*--------------- SECTION 4----------------------*/
+
+             #sec4{
+                    background-color:#151515e6;
+                    color: #fff;
+                    padding: 50px 0;
+                    position: relative; 
+                }
+                 #sec4::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("hero.jpg.webp");
+                    background-size: cover;
+                    background-position: center;
+                    opacity: 3; 
+                   z-index: -1; 
+                }
+                #sec4 h1 {
+                    font-size: 2em;
+                    position: relative; 
+                    padding-left: 5px;
+                    padding-bottom: 30px; 
+                    margin-bottom: 50px; 
+                    margin-left:20%;
+                    font-family: Montserrat, sans-serif;
+                }
+                #sec4 h1::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 70px; 
+                    height: 3px;
+                    background-color: #ff4500;
+                }
+                @media only screen  and (max-width: 425px),
+                 only screen  and (max-width: 375px), 
+                 only screen  and (max-width: 320px){
+                    #sec4 h1 {
+                    padding-left:0;
+                     margin-left:20px;
+                    }
+                }
+
+                 /*------------------------SECTION NO 5------------------------*/
+                 #sec5 {
+     padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 30px;
+}
+
+.left, .right {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    max-width: 50%;
+}
+
+.eventheader {
+    color: #333;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    margin-left: 17%;
+}
+
+          .eventheader::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 70px; 
+                height: 4px;
+                background-color: #ff4500;
+            }
+
+.cause {
+    padding: 30px;
+    width: 500px;
+    height: 500px;
+    background-color: #ddd;
+}
+
+.cause img {
+    width: 320px;
+    height: 350px;
+}
+
+.cause-details {
+    margin-left: 30px;
+}
+
+.cause-details h6 {
+    font-size: 12px;
+    color: #333;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.cause-details h4 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.cause-details p {
+    font-size: 17px;
+    width: 250px;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 80px; 
+    line-height: 140%;
+}
+
+.cau {
+    display: flex;
+}
+
+.btns {
+    display: inline-block;
+    padding: 20px 50px;
+    color: #fff;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.raised-goal {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar-container {
+    position: relative;
+    margin: 30px 20px;
+}
+
+
+
+.progress-bar {
+    background:silver;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress {
+    background: #ff4500;
+    height: 5px;
+    border-radius: 5px;
+    width: 83%; 
+}
+                
+                .progress-circle {
+                    position: absolute;
+                    top: -20px;
+                    left: 83%; 
+                    transform: translateX(-50%);
+                    background: #ff4500;
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                
+                @media (max-width: 991px) {
+                    #sec5 {
+                     padding: 50px 20px;
+                    }
+
+                    .container {
+                     display: flex;
+                   flex-direction: column;
+                  justify-content:flex-start;
+                      align-items:flex-start;
+                      margin-left: 10%;
+                       gap:30px;
+                     margin-top: 30px;
+}
+
+                 .left, .right {
+                     margin-left: 0;
+                 }
+              
+                .eventheader {
+                    font-size: 2.5em;
+               margin-left:5%;
+}
+             }
+
+            @media (max-width: 768px) {
+               #sec5 {
+                     padding: 50px 20%;
+                    }
+
+                    .container {
+                  
+                      margin-left: 30%;
+                    }
+                    .eventheader {
+                    font-size: 2.5em;
+               margin-left:5%;
+                 
+             
+             }
+             .left, .right {
+                     margin-left: 0;
+                 }
+                }
+
+             @media (max-width: 667px) {
+                #sec5 {
+          padding: 50px 20px;
+                    }
+                .left, .right {
+                    margin-left: 0px;
+                }
+                .cause{
+                   width:500px;
+                   height: 470px;   
+               }
+               .container {
+                  
+                  margin-left: 35%;
+                }
+            }
+
+            @media (max-width: 425px) {
+                .left, .right {
+                    margin-left: 0;
+                }
+                .cau{
+                    flex-direction: column;
+                }
+                .cause{
+                   width:320px;
+                   height:auto; 
+                }
+               .cause-details{
+                margin-left: 30px;
+            }
+               .container {
+              margin-left: 20px;
+                justify-content:flex-start;
+            }
+            .container {
+                  
+                  margin-left: 35%;
+                }
+            .cause-details h6{
+                margin-top: 5px;
+                font-size: 15px; 
+            }
+            .cause-details p{
+                width:300px;
+                    margin-bottom: 30px;
+            }
+            .cause-details h4{
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            }
+            @media (max-width: 375px) {
+                .cause{
+                    align-items: center;
+                    justify-content: center;
+                    width:270px;
+                    height:auto; 
+                    padding: 30px;
+                 }
+                 .cause img{
+                    width:270px;
+                   height: 250px;
+               }
+               .cause-details p{
+                width:280px;
+                    margin-bottom: 30px;
+            }
+            }
+            @media (max-width: 320px) {
+               .cause{
+                    width:210px;
+                    height:auto; 
+                    padding: 30px;
+                 }
+                 .cause img{
+                    width:230px;
+                   height: 250px;
+               }
+               .cause h6{
+                     font-size: 10px;
+               }
+               .cause p{
+                width:200px;
+                font-size: 15px;
+               }
+               .raised-goal{
+                font-size: 10px;;
+               }
+               .eventheader {
+                font-size: 20px;
+               }
+            }
+
+            /*-----------------------SECTION NO 6*--------------*/
+              /*  #sex6 {
+     padding: 50px 0;
+     background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 30px;
+}
+                
+                 .cause-item {
+                    box-sizing: border-box;
+                    padding: 0;
+                    background: white;
+                     border:2px solid silver;
+                     align-items:center;
+                  
+                    text-align: left;
+                    margin: 0;
+                    height: 550px;
+                    width:350px;
+
+                }
+                
+                .cause-item img {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    padding: 0;
+}
+                
+                .cause-item h3 {
+                  
+                    font-size: 1.5em;
+                    margin: 20px 20px;
+                }
+                
+                .cause-item p {
+                    text-align:justify;
+                    width:320px;
+                    line-height: 150%;
+                    font-size:17px;
+                    color: #666;
+                    margin: 20px 20px;
+                }
+                .raised-goas{
+                    font-size:50px;
+                   display: flex;
+                   margin:0;
+                   justify-content: flex-start;
+                   align-items: flex-start;
+                   gap:120px;
+                }
+                
+               
+.progress-bar-container {
+    position: relative;
+    margin: 30px 20px;
+}
+
+
+
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress {
+    background: #ff4500;
+    height: 5px;
+    border-radius: 5px;
+    width: 83%; 
+}
+                
+                .progress-circle {
+                    position: absolute;
+                    top: -20px;
+                    left: 83%; 
+                    transform: translateX(-50%);
+                    background: #ff4500;
+                    color: white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+             
+
+               
+   @media only screen and (max-width: 667px) {
+        .cards {
+        display:flex;
+        max-width: 667px;
+        flex-direction: column;;
+      
+       
+    }
+    .cause-item img {
+     width: 100%;
+     height: 45%; 
+     }
+    
+    .cause-item {
+        width: 500px;
+       
+    }
+    .cause-item p{
+        width:400px;
+    }
+}
+           
+@media only screen and (max-width: 425px) {
+    #cards {
+        display: flex;
+        flex-direction: column;
+    }
+      
+    .cause-item img {
+     width: 100%;
+     height: 45%; 
+}
+    
+    .cause-item { 
+         height: 570px;
+        width:80%;
+       
+        margin:10 0;
+    }
+    .cause-item p{
+        width:250px;
+    }
+    .cause-item{
+        font-size: 0.7em;
+    }
+    .raised-goas{
+        gap:20px;
+    }
+}
+@media only screen and  (max-width: 320px){
+    .cause-item img {
+     width: 100%;
+     height: 45%; 
+}
+    
+    .cause-item { 
+         height: 600px;
+        width:80%;
+       
+        margin:10 0;
+    }
+    .cause-item p{
+        font-size: 15px;
+        width:200px;
+    }
+    .raised-goas{
+        gap:30px;
+    }
+}
+ @media only screen  and  (max-width: 991px){
+.cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+            max-width: 991px;
+            margin: 0 auto;
+        }
+
+        .cards .cause-item:nth-child(3) {
+            grid-column: 1 / -1;
+        }
+        #sex6{
+            padding: 30px 80px;
+        }
+     
+    }
+    /*@media only screen  and(max-width: 768px){
+.cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .cards .cause-item:nth-child(3) {
+            grid-column: 1 / -1;
+        }
+        #sex6{
+            padding: 30px 80px;
+        }
+     
+    }*/
+    #sex6 {
+    padding: 50px 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.cause-item {
+    box-sizing: border-box;
+    padding: 0;
+    background: white;
+    border: 2px solid silver;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    height: 550px;
+    width: 350px;
+}
+
+.cause-item img {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+.cause-item h3 {
+    font-size: 1.5em;
+    margin: 20px 20px;
+}
+
+.cause-item p {
+    text-align: justify;
+    width: 320px;
+    line-height: 150%;
+    font-size: 17px;
+    color: #666;
+    margin: 20px 20px;
+}
+
+.raised-goas {
+    font-size: 50px;
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px;
+}
+
+.progress-bar-container {
+    position: relative;
+    margin: 30px 20px;
+}
+
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 5px;
+}
+
+.progress {
+    background: #ff4500;
+    height: 5px;
+    border-radius: 5px;
+    width: 83%;
+}
+
+.progress-circle {
+    position: absolute;
+    top: -20px;
+    left: 83%;
+    transform: translateX(-50%);
+    background: #ff4500;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+        max-width: 991px;
+        margin: 0 auto;
+    }
+
+    .cards .cause-item:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    #sex6 {
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-top: 30px;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .cards .cause-item:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    #sex6 {
+        padding: 30px 80px;
+    }
+}
+
+@media (max-width: 667px) {
+    .cards {
+        display: flex;
+        max-width: 667px;
+        flex-direction: column;
+    }
+
+    .cause-item {
+        width: 500px;
+    }
+
+    .cause-item p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cause-item img {
+        width: 100%;
+        height: 45%;
+    }
+
+    .cause-item {
+        height: 650px;
+        width:150%;
+        margin: 10 0;
+    }
+
+    .cause-item p {
+        width: 250px;
+    }
+
+    .cause-item {
+        font-size: 0.7em;
+    }
+
+    .raised-goas {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .cause-item img {
+        width: 100%;
+        height: 45%;
+    }
+
+    .cause-item {
+        height: 650px;
+        width:150%;
+        margin: 10 0;
+    }
+
+    .cause-item p {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .raised-goas {
+        gap: 30px;
+    }
+}
+
+    
+
+/*----------------SECTION NO 7-------------*/
+                 #sec6 {
+                    background-color:#151515e6;
+                    padding: 50px 0;
+                    position: relative; 
+                  
+                }
+                
+                .charity-section {
+                   
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                
+                .charity-header {
+                    max-width: 50%;
+                }
+                
+                 .charity-header h1 {
+                    padding-left: 30x;
+                    font-size: 2em;
+                    position: relative; 
+                    line-height: 1.6;
+                    margin-bottom: 30px; 
+                    color: #fff;
+                    width:500px;
+                }
+               
+                .charity-header p {
+                    font-size: 1em;
+                    line-height: 1.6;
+                    margin-bottom: 30px;
+                    color:silver;
+                }
+                
+                .read-more-btns {
+                    display: inline-block;
+                    background-color:#ff4500;
+                    color: #fff;
+                    padding: 17px 40px; 
+                    text-decoration: none;
+                    border-radius: 30px;
+                    font-size: 18px; 
+                }
+               
+
+                .charity-image {
+                    max-width: 45%;
+                }
+                
+                .charity-image img {
+                    width: 100%;
+                    border-radius: 1px;
+                }
+
+
+                .raised-goals {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar-containers {
+    position: relative;
+    margin: 10px 0;
+}
+@media (max-width: 991px) {
+    .charity-section {
+        flex-direction: column;
+    }
+
+    .charity-image {
+        order: 1;
+        max-width: 100%;
+    }
+    .charity-image img{
+         width:700px;
+        height: 600px;
+
+    }
+    .charity-header {
+        order: 2;
+        max-width: 70%;
+       
+    }
+
+    .charity-header p{
+        text-align: justify;
+        font-size: 1em;
+    }
+    .charity-header h1{
+        width:700px;
+    }
+}
+@media (max-width: 768px) {
+    
+    .charity-header {
+        max-width: 95%;
+    }
+
+    .charity-header p{
+        width:650px;
+    }
+    .charity-header h1{
+        width:700px;
+    }
+    .raised-goals {
+       justify-content: flex-start;
+    align-items: flex-start;
+      gap: 60%;
+    }
+}
+@media (max-width: 667px) {
+    
+    .charity-header {
+       order: 2;
+        max-width: 80%;
+    }
+
+    .charity-image {
+        order: 1;
+        max-width: 100%;
+    }
+    .charity-image img{
+         width:500px;
+        height: 500px;
+    }
+    .charity-header p{
+        width:460px;
+    }
+    .charity-header h1{
+        width:500px;
+    }
+    .raised-goals {
+      gap: 80%;
+    }
+}
+@media (max-width: 425px) {
+     .charity-header {
+       order: 2;
+        max-width: 90%;
+    }
+
+    .charity-image {
+        order: 1;
+        max-width: 100%;
+    }
+    .charity-image img{
+         width:380px;
+        height: 450px;
+    }
+    .charity-header p{
+        width:300px;
+    }
+    .charity-header h1{
+        width:300px;
+    }
+    .raised-goals {
+      gap: 70%;
+    }
+}
+@media (max-width: 425px){
+    .charity-image img{
+         width:300px;
+        height: 400px;
+    }
+    .charity-header p{
+        width:280px;
+    }
+    .raised-goals {
+      gap: 55%;
+    }
+}
+@media (max-width: 320px){
+    .charity-image img{
+         width:250px;
+        height: 350px;
+    }
+    .charity-header p{
+        width:250px;
+    }
+    .raised-goals {
+      gap: 55%;
+    }
+    .charity-header h1{
+        width:250px;
+    }
+}
+
+   /*---------------------SECTION NO 8-------------------------*/   
+    
+   #sect11 {
+        background-color:#151515e6;
+        position: relative;
+        color: #fff;
+        padding: 80px 50px;
+        background-image: url('f.jpg.webp'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden; 
+    }
+    
+    #sect11::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        background-color:#151515e6;
+        z-index: 1;
+    }
+    #sect11 img{
+        margin-bottom: 20px;
+    }
+    #sect11 .footer-container {
+        position: relative;
+        z-index: 2; 
+    }
+     .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        height: 400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        flex-wrap: wrap; 
+    }
+    .footer-section {
+        flex: 1;
+        margin: 20px;
+        min-width: 250px; 
+    }
+    .footer-section h2, .footer-section h3 {
+        color:white;
+        margin-top:0;
+    }
+    .footer-section p, .footer-section ul, .footer-section li {
+        padding: 0;
+        color:#999;
+        list-style: none;
+        gap:30px;
+    }
+    .footer-section ul.tal li {
+        font-size: 15px;
+        color: #999;
+        margin-bottom: 45px; 
+    }
+    .footer-section p{
+        line-height: 150%;
+        margin-bottom: 60%;
+    }
+    .footer-section ul {
+        padding-left: 0;
+       
+    }
+    .footer-section h3 {
+        margin-bottom: 35px; 
+        font-size: 20px;
+    }
+    .footer-section ul li {
+        margin-bottom: 15px;
+       
+    }
+    
+    .footer-section ul li:last-child {
+        margin-bottom: 0;
+    }
+    .footer-section ul li a {
+        color:  #999;
+        text-decoration: none; 
+    }
+    .footer-section ul.tal li a span {
+        margin-top: 10px;
+        display: block;
+        font-size: 12px;
+        color:#ff4500;
+    }
+    .footer-section p {
+        margin-bottom: 10px;
+    }
+    .social-icons {
+        display: flex;
+        gap: 30px;
+        margin-top:40px ;
+    }
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .footer-section form {
+        margin-top: 30px;
+        display: flex;
+    }
+     .footer-section input[type="email"] {
+        padding: 15px;
+        border: none;
+        border-radius: 1px;
+        flex: 1;
+    }
+     .footer-section button {
+        padding: 10px 20px;
+        background-color:#ff4500;
+        border: none;
+        border-radius: 1px;
+        color: #fff;
+        cursor: pointer;
+    }
+     .footer-section button:hover {
+        background-color:#ff4500;}
+
+        .footer-bottom {
+            background-color:#333;
+            height: 50px;
+            text-align: center;
+            padding: 20px 0; 
+            color:#999;
+        }
+        
+        .footer-bottom span {
+            color: red;
+        }
+       
+        /*-----------------------*/
+
+        @media (max-width: 991px) {
+            #sect11{
+                padding: 40px 40px;
+            }
+                .footer-section {
+                    height: 300px;
+                    flex: 1 1 45%; 
+                    margin:0; 
+                    min-width: 30%;
+                }
+                .footer-container {
+                    height: 80vh;
+                    padding: 0;
+                    margin: 0;
+                    flex-wrap: wrap;
+                }
+        }
+        @media (max-width: 768px) {
+            #sect11{
+
+                padding: 30px 20px;
+            }
+            .footer-container {
+                  flex-wrap: wrap;
+                }
+                .footer-section {
+                    flex: 1 1 45%; 
+                    margin: 10px; 
+                    min-width: 45%;
+                }
+                .footer-container {
+                    height: 100vh;
+                }
+        }
+        @media (max-width:667px) {
+            #sect11{
+                padding: 30px 20px;
+            }
+            .footer-container {
+                height: auto;
+                flex-direction:row;
+                align-items:flex-start;
+            }
+            .footer-section {
+              margin-left: 0;
+                margin-bottom: 20px;  
+            }
+        }
+        @media (max-width: 425px) {
+            #sect11{
+                padding: 30px 20px;
+            }
+            .footer-container {
+                padding: 0;
+                margin-left: 0;
+                height: auto;
+                flex-direction:row;
+                align-items:flex-start;
+            }
+            .footer-section {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 20px;
+                min-width: 300px;
+            }
+            .footer-bottom p{
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 375px) {
+            #sect11{
+                padding: 20px 50px;
+            }
+          .footer-section {
+              min-width: 200px;
+              margin-bottom: 20px;
+             }
+        }
+        @media (max-width: 320px) {
+            #sect11{
+                
+                padding: 20px 10px;
+            }
+          .footer-section {
+              min-width: 200px;
+              margin-bottom: 20px;
+             }
+             
+        }
+</style>
+<body>
+    <!------------------------SECTIOB1 NAVBAR----------------->
+  
+    <div class="header" id="header">
+      <div class="overall">
+      <div class="logo">
+          <img src="logo.png">
+      </div>
+      <div class="title">
+          + THECHARITY
+      </div>
+  </div>
+      <div class="icons">
+          <i class="fas fa-laptop"></i>
+          <i class="fas fa-tablet-alt"></i>
+          <i class="fas fa-mobile-alt"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-times" onclick="closeHeader()"></i>
+      </div>
+  </div>
+  
+                <!-------------------SECTION NO2 NAVBAR-------------->
+  
+                <section id="navbr">
+                  <div class="nav1">
+                      <P>MAIL: contact@ourcharity.com</P>
+                      <p>PHONE: +24 3772 120 091 / +56452 4567</p>
+                </div>
+                <div class="nav2">
+                  <button class="btn">Donate Now</button>
+                </div>
+                </section>
+  
+                <!-------------------SECTION NO3 NAVBAR-------------->
+  
+                <section id="navbar">
+                  <div class="log">
+                      <img src="logo.png.webp" alt="Logo">
+                  </div>
+                  <ul class="nav">
+                    <li><a href="ass.html" class="active">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="cause.html">Causes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="NEWS.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                  <div class="menu-icon" onclick="toggleMenu()">
+                      <div class="hamburger-icon">☰</div>
+                      <div class="close-icon">✖</div>
+                  </div>
+              </section>
+  
+                      <!-------------------SECTION NO4 NAVBAR-------------->
+  
+                  <section id="sec4">
+                      <h1>Our Case</h1>
+                   </section>
+
+                   <!-------------------------SECTION NO5 CAUSE--------->
+
+                   <section id="sec5">
+                    <h2 class="eventheader">Featured Cause</h2>
+                    <div class="container">
+                       
+                        <div class="column left">
+                            <div class="featured-cause">
+                                <div class="cause">
+                                    <div class="cau">
+                                        <img src="featured-causes.jpg.webp" alt="Fundraiser for Kids">
+                                        <div class="cause-details">
+                                            <h4>Fundraiser for Kids</h4>
+                                            <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum ullamcorper mauris.</p>
+                                            <a href="#" class="btns">Donate Now</a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="progress-bar-container">
+                                        <div class="progress-circle">83%</div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 83%;"></div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="raised-goal">
+                                        <p>Raised: $56,880</p>
+                                        <p>Goal: $70,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="column right">
+                            <div class="featured-cause">
+                                <div class="cause">
+                                    <div class="cau">
+                                        <img src="featured-causes.jpg.webp" alt="Fundraiser for Kids">
+                                        <div class="cause-details">
+                                            <h4>Fundraiser for Kids</h4>
+                                            <h6>Aug 25, 2018 | Ball Room New York</h6>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum ullamcorper mauris.</p>
+                                            <a href="#" class="btns">Donate Now</a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="progress-bar-container">
+                                        <div class="progress-circle">83%</div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 83%;"></div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="raised-goal">
+                                        <p>Raised: $56,880</p>
+                                        <p>Goal: $70,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                  <!-------------------------SECTION NO6 CAUSE--------->
+                 
+                 <section id="sex6">
+                <div class="cards">
+                    <div class="cause-item ">
+                        <img src="cause-1.jpg.webp" alt="Cause 1">
+                                    <h3>Bring water to the childrens</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-circle">83%</div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 83%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="raised-goas">
+                                        <p>Raised: $56,880</p>
+                                        <p>Goal: $70,000</p>
+                                    </div>
+                                </div>
+
+                    <div class="cause-item ">
+                        <img src="cause-2.jpg.webp" alt="Cause 2">
+                        <h3>Education for all</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                        <div class="progress-bar-container">
+                            <div class="progress-circle">83%</div>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 83%;"></div>
+                            </div>
+                        </div>
+                        <div class="raised-goas">
+                            <p>Raised: $56,880</p>
+                            <p>Goal: $70,000</p>
+                        </div>
+                    </div>
+
+                    <div class="cause-item ">
+                       <img src="cause-3.jpg.webp" alt="Cause 3">
+                                    <h3>Bring water to the childrens</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                    <div class="progress-bar-container">
+                                        <div class="progress-circle">83%</div>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 83%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="raised-goas">
+                                        <p>Raised: $56,880</p>
+                                        <p>Goal: $70,000</p>
+                                    </div>
+                                </div>
+                </div>
+            </section>
+                
+                 <!-------------------------SECTION NO7 -------->
+
+                 <section id="sec6">
+                    <div class="charity-section">
+                     <div class="charity-header">
+                      <h1>We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</h1>
+                      <p>Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet.</p>
+                      <div class="progress-bar-containers">
+                        <div class="progress-circle">83%</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 83%;"></div>
+                        </div>
+                    </div>
+                      <div class="raised-goals">
+                        <p>Raised: $56,880</p>
+                        <p>Goal: $70,000</p>
+                    </div>
+                      <a href="#" class="read-more-btns">Read More</a>
+                             </div>
+                             <div class="charity-image">
+                                 <img src="c.jpg.webp" alt="Charity Image">
+                             </div>
+                         </div>
+                 </section>
+
+                  <!-------------------------SECTION NO8 CAUSE--------->
+                  <section id="sex6">
+                    <div class="cards">
+                        <div class="cause-item ">
+                            <img src="cause-1.jpg.webp" alt="Cause 1">
+                                        <h3>Bring water to the childrens</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-circle">83%</div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 83%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="raised-goas">
+                                            <p>Raised: $56,880</p>
+                                            <p>Goal: $70,000</p>
+                                        </div>
+                                    </div>
+    
+                        <div class="cause-item ">
+                            <img src="cause-2.jpg.webp" alt="Cause 2">
+                            <h3>Education for all</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                            <div class="progress-bar-container">
+                                <div class="progress-circle">83%</div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 83%;"></div>
+                                </div>
+                            </div>
+                            <div class="raised-goas">
+                                <p>Raised: $56,880</p>
+                                <p>Goal: $70,000</p>
+                            </div>
+                        </div>
+    
+                        <div class="cause-item ">
+                           <img src="cause-3.jpg.webp" alt="Cause 3">
+                                        <h3>Bring water to the childrens</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris.</p>
+                                        <div class="progress-bar-container">
+                                            <div class="progress-circle">83%</div>
+                                            <div class="progress-bar">
+                                                <div class="progress" style="width: 83%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="raised-goas">
+                                            <p>Raised: $56,880</p>
+                                            <p>Goal: $70,000</p>
+                                        </div>
+                                    </div>
+                    </div>
+                </section>
+                  <!-------------------SECTION NO8 ------------------->
+
+                  <section id="sect11">
+                    <div class="footer-container">
+                        <div class="footer-section">
+                            <img src="logo.png.webp">
+                            <p>Lorem ipsum dolor sit amet, con sectetur adipiscing elit. Mauris temp us vestib ulum mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.Lorem ipsum dolo.</p>
+                          
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Become a Volunteer</a></li>
+                                <li><a href="#">Donate</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Causes</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="footer-section">
+                            <h3>Latest News</h3>
+                            <ul class="tal">
+                                <li><a href="#">A new cause to help <span>March 12, 2018</span></a></li>
+                                <li><a href="#">We love to help people <span>March 12, 2018</span></a></li>
+                                <li><a href="#">The new ideas for helping <span>March 12, 2018</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Contact</h3>
+                            <p><i class="fas fa-phone"></i> +45 677 8993000 223</p>
+                            <p><i class="fas fa-envelope"></i> office@template.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Main Str. no 45-46, b3, 56832, Los Angeles, CA</p>
+                            <form>
+                                <input type="email" placeholder="Your email">
+                                <button type="submit">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <div class="footer-bottom">
+                    <p>Copyright ©2024 All rights reserved | This template is made with <span>❤</span> by Colorlib</p>
+                </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+                <script>
+                    function closeHeader() {
+                   document.querySelector('.header').style.display = 'none';
+                    }
+               
+                    function toggleMenu() {
+                   const nav = document.querySelector('.nav');
+                   const menuIcon = document.querySelector('.menu-icon');
+                   nav.classList.toggle('open');
+                   menuIcon.classList.toggle('active');
+               }
+               </script>
+
+</body>
+</html>
